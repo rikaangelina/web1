@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form Pendaftaran BPJS</title>
+    <style >
+        body {
+            background-color: lightblue; 
+        }
+    </style>
+   
+    <img src="angelina.jpg" alt="angelina" width="300" height="200">
+</head>
+<body>
+    <h2>Pendaftaran tenaga kerja dan perubahan identitas tenaga kerja dan susunan keluarga</h2>
+    <table border="1" style="width: 100%;"></table>
+        <form action="proses_pendaftaran.php" method="post">
+        <label for="Apakah sebelumnya anda sudah menjadi peserta jamsostek/BPJS ketenagakerja">Apakah sebelumnya anda sudah menjadi peserta jamsostek/BPJS ketenagakerja:</label>
+        <input type="radio" name="Apakah sebelumnya anda sudah menjadi peserta jamsostek/BPJS ketenagakerja" value="belum" required>belum
+        <input type="radio" name="Apakah sebelumnya anda sudah menjadi peserta jamsostek/BPJS ketenagakerja" value="sudah" required> sudah<br><br>
+        </table>
+        <table border="1" style="width: 100%;">  
+            <H7>diisi pihak bpjs ketenagakerja</H7> 
+            <label for="NPP">NPP:</label>
+            <input type="text" name="nomor NPP" id="nomor NPP" required><br><br>
+            <label for="KPJ">KPJ:</label>
+            <input type="text" name="nomor KPJ" id="nomor KPJ" required><br><br>
+            </table>
+            <table border="1" style="width: 100%;">
+        <h3>Bagian I IDENTITAS TENAGA KERJA</h3>
+        <label for="bila sudah mohon di isi nomor KPJ anda">bila sudah mohon di isi nomor KPJ anda:</label>
+        <input type="text" name="nomor KPJ" id="nomor KPJ" required><br><br>
+        <label for="nama perusahaan(sesuai perusahaansekarang)">nama perusahaan(sesuai perusahaansekarang):</label>
+        <input type="text" name="nama perusahaan" id="nama perusahaan" required><br><br>
+        <label for="nomor induk karyawan">nomor induk karywana:</label>
+        <input type="text" name="nomor induk karyawan" id="nomor induk karyawan" required> <br><br>
+        <label for="nomor unit kerja">nomor unit kerja:</label>
+        <input type="text" name="nomor unit kerja" id="nomor unit kerja" required><br><br>
+        <label for="Kode unit kerja">Kode unit kerja:</label>
+        <input type="text" name="Kode unit kerja" id="Kode unit kerja" required><br><br>
+        <label for="nama lengkap">nama lengkap:</label>
+        <input type="text" name="nama lengkap" id="nama lengkap" required><br><br>
+        <br>
+    pendidikan
+    <select name="pendidikan">
+        <option value="01">SD</option>
+        <option value="02">SMP</option>
+        <option value="03">SMA</option>
+        <option value="04">D1-D3</option>
+        <option value="05">S1</option>
+    </select>
+    <br>
+    <label for="Status pernikahan">Status pernikahan:</label>
+        <input type="radio" name="Status pernikahan" value="belum menikah" required> belum menikah
+        <input type="radio" name="Status pernikahan" value="sudah menikah" required> sudah menikah<br><br>
+        <label for="tanggal_lahir">Tanggal Lahir:</label>
+        <input type="date" name="tanggal_lahir" id="tanggal_lahir" required><br><br>
+        <label for="jenis_kelamin">Jenis Kelamin:</label>
+        <input type="radio" name="jenis_kelamin" value="Laki-laki" required> Laki-laki
+        <input type="radio" name="jenis_kelamin" value="Perempuan" required> Perempuan<br><br>
+        <label for="golongan darah">golongan darah:</label>
+        <input type="radio" name="golongan darah" value="A" required> A
+        <input type="radio" name="golongan darah" value="B" required>B
+        <input type="radio" name="golongan darah" value="O" required>O<br><br>
+        <label for="identitas diri">identitas diri:</label>  
+        <input type="text" name="nomor identitas diri" id="nomor identitas diri" required><br><br>
+        <label for="nomor NPWP">nomor NPWP</label>
+        <input type="text" name="nomor pnwp" id="nomor pnpwp" required><br><br>
+        <label for="nama ibu kandung">nama ibu kandung</label>
+        <input type="text" name="nama ibu kandung" id="nama ibu kandung" required><br><br>
+        <label for="alamat">Alamat:</label>
+        <textarea name="alamat" id="alamat" rows="4" cols="50" required></textarea><br><br>
+        <label for="kode pos">kode pos</label>
+        <input type="text" name="kode pos" id="kode pos" required><br><br>
+        <label for="alamat surat">Alamat surat:</label>
+        <textarea name="alamat surat" id="alamat surat" rows="4" cols="50" required></textarea><br><br>
+        <label for="nomor kantor">nomor kantor</label>
+        <label for="kode pos">kode pos</label>
+        <input type="text" name="kode pos" id="kode pos" required><br><br>
+        <input type="text" name="nomor kantor" id="nomor kantor" required><br><br>
+        <label for="nomor rumah">nomor rumah</label>
+        <input type="text" name="nomor rumah" id="nomor rumah" required><br><br>
+        <label for="nomor HP">nomor HP</label>
+        <input type="text" name="nomor HP" id="nomor HP" required><br><br>
+        <label for="alamat email">alamat email</label>
+        <input type="text" name="alamat email" id="alamat email" required><br><br>
+        <label for="surat_menyurat_ke">surat_menyurat_ke:</label>
+        <input type="radio" name="surat_menyurat_ke" value="Alamat surat" required> Alamat surat
+        <input type="radio" name="surat_menyurat_ke" value="Alamat email" required>Alamat email<br><br>
+        </table>
+<h4>Bagian Bank yang dimiliki:</h4>
+        <label for="nama bank">nama bank:</label>
+        <input type="text" name="nama bank" id="nama bank" required><br><br>
+        <label for="kode bank">kode bank</label>
+        <input type="text" name="kode bank" id="kode bank" required><br><br>
+        <label for="nama cabang">nama cabang:</label>
+        <input type="text" name="nama cabang " id="nama cabang" required><br><br>
+        <label for="NO rekening">NO rekening:</label>
+        <input type="text" name="NO rekening" id="NO rekening" required><br><br>
+        <label for="Atas nama">Atas nama:</label>
+        <input type="text" name="Atas nama" id="Atas nama" required><br><br> 
+        <table border="1" style="width: 100%;"></table>   
+ <h5>Bagian II SUSUNAN KELUARGA</h5>
+ <table border="1" style="width:80%;">
+    <tr>
+        <th rowspan="2" align="center" bgcolor="grey">hubungan keluarga</th>
+        <th rowspan="2" align="center" bgcolor="grey">nama anggota keluarga</th>
+        <th rowspan="2" align="center" bgcolor="grey">tanggal lahir</th>
+        <th rowspan="2" align="center" bgcolor="grey">jenis kelamin(L/P)</th>
+        <th rowspan="2" align="center" bgcolor="grey">golongan darah(A,B,O)</th>
+        <th rowspan="2" align="center" bgcolor="grey">keterangan
+</tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>istri/suami</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>            
+            <input type="radio" name="keterangan" value="Cerai" required> cerai
+            <input type="radio" name="keterangan" value="Meninggal dunia" required>Meninggal dunia<br><br></td>
+    </tr>
+    <tr>
+        <td>anak</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>
+            <input type="radio" name="keterangan" value="lahir" required>lahir
+            <input type="radio" name="keterangan" value="Cerai" required> cerai
+            <input type="radio" name="keterangan" value="Meninggal dunia" required>Meninggal dunia<br><br></td></td>
+    </tr>
+    <tr>
+        <td>anak</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td><input type="radio" name="keterangan" value="lahir" required>lahir
+            <input type="radio" name="keterangan" value="Cerai" required> cerai
+            <input type="radio" name="keterangan" value="Meninggal dunia" required>Meninggal dunia<br><br></td></td></td>
+    </tr>
+    <tr>
+        <td>anak</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td><input type="radio" name="keterangan" value="lahir" required>lahir
+            <input type="radio" name="keterangan" value="Cerai" required> cerai
+            <input type="radio" name="keterangan" value="Meninggal dunia" required>Meninggal dunia<br><br></td></td></td>
+    </tr>
+    <table border="1" style="width:80%;">
+        <tr>
+            <th>cap jempol kiri</th>
+            
+            <th>tanda tangan tenaga kerja</th>
+            <th>paspoto 3x4</th>
+            <th>diterima oleh petugas bpjs ketenagakerja</th>
+        </tr>
+    </tr>
+    <tr>
+        <td rowspan="5000"></td>
+        <td rowspan="5000"></td>
+        <td rowspan="5000"></td>
+        <td rowspan="5000" align="center" bgcolor="grey" for="tanggal">tanggal:</label>
+            <input type="text" name="tanggal" id="tanggal" required><br><br>
+            <label for="bulan">bulan:</label>
+            <input type="text" name="bulan" id="bulan" required><br><br>
+            <label for=" tahun"> tahun:</label>
+            <input type="text" name="tahun" id="tahun" required><br><br></td>
+         </tr>
+</table>
+<h6>keterangan:seluruh diisi secara lengkap,isi dengan silang atau centang pada isi yang berbentuk(o)</h6>
+</table>
+</body>
+</html>
